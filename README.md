@@ -16,7 +16,7 @@
 - Open solution with VS 2019. Right click on solution and choose Restore Nuget Packages
 ![image](https://user-images.githubusercontent.com/21098518/114324152-cdf5e580-9b52-11eb-8f52-bd4cfdcf4a0a.png)
 
-- Run project with
+- Run project with VS 2019
 - Check API with Swagger at https://localhost:44365/swagger
 
 
