@@ -31,6 +31,8 @@ namespace CFS.EventManagement.Services
         {
             var ruleViolations = new List<BusinessRuleResult>() { };
             GetEventByFilterRuleModel ruleModel = _mapper.Map<GetEventByFilterRuleModel>(query);
+            Responder responder = db.Responders.FirstOrDefault(res => res.Name.Equals(query.Responder));
+            ruleModel.ResponderId = responder?.Id;
             ruleViolations.AddRange(_ruleSets.ExecuteRules(ruleModel).Where(x => x.IsFailed));
 
             if (ruleViolations.Count > 0)
@@ -42,7 +44,6 @@ namespace CFS.EventManagement.Services
 
                 throw new Exception(message);
             }
-
 
             IQueryable<Responder> queryResponder = db.Responders;
             IQueryable<CfsEvent> queryEvent = db.Events;
