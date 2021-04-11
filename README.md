@@ -4,7 +4,7 @@
 **Installation:**
 - You must have the .NET SDK installed. .NET Core 3.1 is recommended.
 - You must install Visual Studio 2019.
-- You must have MSSM 2019.
+- You must install SQL Express and SQL Server Management Studio (SSMS).
 
 **How to run:**
 -  Open CFSscript.sql in this project and run it with SQL query
