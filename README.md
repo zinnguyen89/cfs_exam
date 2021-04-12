@@ -7,8 +7,9 @@
 - You must install SQL Express and SQL Server Management Studio (SSMS).
 
 **How to run:**
--  Open **CFSscript.sql** in this project and run it with SQL query
--  Open **CFSData.sql** in this project and run it with SQL query
+-  Create a database with name CFS in SSMS
+-  Connect SQL server and open CFS then copy content of  **CFSscript.sql** in this project. Run query with this content
+-  Connect SQL server and open CFS then copy content of  **CFSData.sql** in this project. Run query with this content
 -  Change setting in **appsettings.Development.json** with your sql server
 ![image](https://user-images.githubusercontent.com/65062432/114324303-81f77080-9b53-11eb-9e1a-c9582dfd7d4d.png)
 
